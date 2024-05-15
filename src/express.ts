@@ -1,5 +1,5 @@
 import express from "express";
-import Database from "better-sqlite3";
+import DatabaseConstructor, { Database } from "better-sqlite3";
 
 // import bot from "./bot";
 import dotenv from "dotenv";
@@ -10,7 +10,7 @@ import { SessionData } from "./pending-commands";
 import CronService from "./cron";
 import { SubscriptionsService } from "./subscription.service";
 
-const db = new Database("telegraf-sessions.sqlite", {
+const db = new DatabaseConstructor("telegraf-sessions.sqlite", {
   verbose: console.log,
 });
 
