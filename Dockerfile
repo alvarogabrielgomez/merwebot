@@ -10,7 +10,7 @@ COPY package*.json ./
 # Copy the rest of the application code to the working directory
 COPY . .
 # Install dependencies
-RUN npm ci
+RUN npm i
 
 
 # Expose the port on which the server will listen
