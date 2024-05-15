@@ -21,3 +21,6 @@ build/
 # Dependency lock files
 package-lock.json
 yarn.lock
+
+# SQLite
+*.sqlite
