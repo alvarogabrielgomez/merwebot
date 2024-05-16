@@ -81,10 +81,6 @@ app.use((req, res, next) => {
 });
 
 app.get("/", (req, res) => {
-  const bot = res.locals.bot as Telegraf<BotContext>;
-  bot.telegram.sendMessage(60656163, "Hello, world!");
-  bot.telegram.sendMessage(11665860, "Hello, world!");
-  bot.telegram.sendMessage(111341473, "Hello, world!");
   res.send("Hello, world!");
 });
 
